@@ -6,8 +6,7 @@ const prefix = "olimpo!"
 
 
 client.on("ready", () => {
-  console.log(`Estoy listo!, 
-           conectado en ${client.guilds.size} servidores y  ${client.users.size} usuarios.`);
+  console.log(`Estoy listo!`);
 
   client.user.setPresence( {
       status: "online",
