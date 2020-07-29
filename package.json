@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +12,5 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.6.4",
-    "discord.js-v11": "^12.1.1"
   }
 }
