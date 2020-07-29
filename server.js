@@ -11,7 +11,7 @@ client.on("ready", () => {
   client.user.setPresence( {
       status: "online",
       game: {
-          name: ` olimpo!help - La ip del servidor es: (Proximamente) `,
+          name: ` olimpo!info - La ip del servidor es: (Proximamente) `,
           type: "PLAYING"
       }
    });
@@ -31,19 +31,19 @@ client.on("message", async (message) => {
 
 // Al hacer un comando poner al inicio if (message.content.startsWith(prefix +"comando")){ 
 
-  if (message.content.startsWith(prefix + "comandos")) {
+  if (message.content.startsWith(prefix + "info")) {
     const embed = new Discord.RichEmbed()
-      .setFooter("RageMC Network", client.user.avatarURL)
+      .setFooter("OlimpoCraft", client.user.avatarURL)
       .addField(
         "Lista oficial de comandos",
-        "Esta es la lista oficial de comandos del bot de RageMC Network, para poder usar estos comandos utiliza el prefix . antes de usar cualquier comando!. "
+        "Esta es la lista oficial de comandos del bot de OlimpoCraft, para poder usar estos comandos utiliza el prefix . antes de usar cualquier comando!. "
       )
       .addField(
         "Comandos Informativos ",
         "`foro` | `ip` | `tienda` | `redes`"
       )
       .addField("Comandos de Moderacion ", 
-      "`sancion` | `kick` | `clear`")
+      "`sancion` | `kick`")
       .setColor(0xf57eff);
 
     message.channel.send({ embed });
